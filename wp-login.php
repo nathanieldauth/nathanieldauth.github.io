@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Log In &lsaquo; Nathaniel Dauth &#8212; WordPress</title>
 	<meta name="robots" content="noindex, follow">
-<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
+<link rel="dns-prefetch" href="//s.w.org">
 <link rel="stylesheet" id="dashicons-css" href="https://nathanieldauth.github.io/wp-includes/css/dashicons.min.css?ver=6.0" type="text/css" media="all">
 <link rel="stylesheet" id="buttons-css" href="https://nathanieldauth.github.io/wp-includes/css/buttons.min.css?ver=6.0" type="text/css" media="all">
 <link rel="stylesheet" id="forms-css" href="https://nathanieldauth.github.io/wp-admin/css/forms.min.css?ver=6.0" type="text/css" media="all">
