@@ -4,12 +4,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Log In &lsaquo; Nathaniel Dauth &#8212; WordPress</title>
 	<meta name="robots" content="noindex, follow">
-<link href="https://fonts.gstatic.com/" crossorigin rel="preconnect">
-<link rel="stylesheet" id="dashicons-css" href="https://nathanieldauth.github.io/wp-includes/css/dashicons.min.css?ver=6.0" type="text/css" media="all">
-<link rel="stylesheet" id="buttons-css" href="https://nathanieldauth.github.io/wp-includes/css/buttons.min.css?ver=6.0" type="text/css" media="all">
-<link rel="stylesheet" id="forms-css" href="https://nathanieldauth.github.io/wp-admin/css/forms.min.css?ver=6.0" type="text/css" media="all">
-<link rel="stylesheet" id="l10n-css" href="https://nathanieldauth.github.io/wp-admin/css/l10n.min.css?ver=6.0" type="text/css" media="all">
-<link rel="stylesheet" id="login-css" href="https://nathanieldauth.github.io/wp-admin/css/login.min.css?ver=6.0" type="text/css" media="all">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" id="dashicons-css" href="https://nathanieldauth.github.io/wp-includes/css/dashicons.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="buttons-css" href="https://nathanieldauth.github.io/wp-includes/css/buttons.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="forms-css" href="https://nathanieldauth.github.io/wp-admin/css/forms.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="l10n-css" href="https://nathanieldauth.github.io/wp-admin/css/l10n.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="login-css" href="https://nathanieldauth.github.io/wp-admin/css/login.min.css?ver=6.0.3" type="text/css" media="all">
 <link rel="apple-touch-icon" sizes="180x180" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/favicon-16x16.png">
@@ -26,13 +26,11 @@
 <meta name="msapplication-TileImage" content="https://nathanieldauth.github.io/wp-content/uploads/cropped-Nathaniel-Dauth-Photography-Favi-270x270.png">
 	</head>
 	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
-	<script type="text/javascript">
-		document.body.className = document.body.className.replace('no-js','js');
-	</script>
+	<script type="text/javascript">document.body.className = document.body.className.replace('no-js','js');</script>
 		<div id="login">
 		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
 	
-		<form name="loginform" id="loginform" action="https://nathanieldauth.github.io/wp-login.php" method="post">
+		<form name="loginform" id="loginform" action="https://localhost/nathanieldauth/wp-login.php" method="post">
 			<p>
 				<label for="user_login">Username or Email Address</label>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username">
@@ -50,7 +48,7 @@
 						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> <label for="rememberme">Remember Me</label></p>
 			<p class="submit">
 				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
-									<input type="hidden" name="redirect_to" value="https://nathanieldauth.github.io/wp-admin/">
+									<input type="hidden" name="redirect_to" value="https://localhost/nathanieldauth/wp-admin/">
 									<input type="hidden" name="testcookie" value="1">
 			</p>
 		</form>
@@ -58,10 +56,9 @@
 					<p id="nav">
 								<a href="https://nathanieldauth.github.io/wp-login.php?action=lostpassword">Lost your password?</a>
 			</p>
-					<script type="text/javascript">
-			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+					<script type="text/javascript">function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
 wp_attempt_focus();
-if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
+if ( typeof wpOnload === 'function' ) { wpOnload() }</script>
 				<p id="backtoblog">
 			<a href="https://nathanieldauth.github.io/">&larr; Go to Nathaniel Dauth</a>		</p>
 			</div>
@@ -85,20 +82,20 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/password-strength-meter.min.js?ver=6.0" id="password-strength-meter-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/password-strength-meter.min.js?ver=6.0.3" id="password-strength-meter-js"></script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/underscore.min.js?ver=1.13.3" id="underscore-js"></script>
 <script type="text/javascript" id="wp-util-js-extra">
 /* <![CDATA[ */
 var _wpUtilSettings = {"ajax":{"url":"\/nathanieldauth\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.0" id="wp-util-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"555ec94e10"};
+var userProfileL10n = {"user_id":"0","nonce":"fb9f146e2b"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.0" id="user-profile-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.0.3" id="user-profile-js"></script>
 	<div class="clear"></div>
 	</body>
 	</html>

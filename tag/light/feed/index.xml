@@ -10,20 +10,20 @@
 <channel>
 	<title>light Archives - Nathaniel Dauth</title>
 	<atom:link href="https://nathanieldauth.github.io/tag/light/feed/" rel="self" type="application/rss+xml" />
-	<link>https://nathanieldauth.github.io</link>
+	<link>https://nathanieldauth.github.io/tag/light/</link>
 	<description></description>
-	<lastBuildDate>Wed, 06 Jul 2022 04:26:55 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 01 Nov 2022 04:19:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0</generator>
+	<generator>https://wordpress.org/?v=6.0.3</generator>
 
 <image>
 	<url>https://nathanieldauth.github.io/wp-content/uploads/cropped-Nathaniel-Dauth-Photography-Favi-32x32.png</url>
 	<title>light Archives - Nathaniel Dauth</title>
-	<link>https://nathanieldauth.github.io</link>
+	<link>https://nathanieldauth.github.io/tag/light/</link>
 	<width>32</width>
 	<height>32</height>
 </image> 

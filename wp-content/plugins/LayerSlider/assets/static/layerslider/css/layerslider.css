@@ -36,6 +36,32 @@
 
 
 
+/* Wrappers */
+
+	ls-scene-wrapper {
+		width: 100%;
+		margin: 0 auto;
+		display: block !important;
+		position: relative !important;
+	}
+
+	ls-scene-wrapper[data-sticky="enabled"]:not([data-disabled-scene]) .ls-container {
+		position: fixed !important;
+		top: 0;
+	}
+
+	ls-scene-wrapper[data-sticky="over"]:not([data-disabled-scene]) .ls-container {
+		position: absolute !important;
+		top: auto !important;
+		bottom: 0 !important;
+	}
+
+	ls-scene-wrapper[data-disabled-scene] {
+		height: auto !important;
+	}
+
+
+
 /* Layers */
 
 	.ls-layers,
@@ -57,6 +83,14 @@
 		transform: translateZ(0);
 	}
 
+	.ls-text-layer .char .ls-grad-bg-overflow {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+
 	.ls-wrapper {
 		padding: 0 !important;
 		visibility: visible !important;
@@ -64,8 +98,58 @@
 		z-index: 1;
 	}
 
+	.ls-wrapper.ls-fix-textnodes .line,
+	.ls-wrapper.ls-fix-textnodes .word {
+		position: static !important;
+		transform: none !important;
+	}
+
+	.ls-layer.ls-has-chars .word {
+		position: static !important;
+	}
+
+	.ls-layer.ls-has-chars .char {
+		position: relative !important;
+	}
+
+	.ls-layer.ls-has-words .word {
+		position: relative !important;
+	}
+
+	.ls-layer.ls-has-lines .line {
+		position: relative !important;
+	}
+
+	.ls-textnode-dummy {
+		display: inline-block !important;
+		visibility: hidden !important;
+		pointer-events: none !important;
+	}
+
+	.ls-textnode-bgclip-wrap {
+		left: 0;
+		top: 0;
+		position: absolute;
+		background-clip: text;
+		-webkit-background-clip: text;
+		text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+		text-align: left !important;
+		pointer-events: none !important;
+	}
+
+	.ls-textnode {
+		color: transparent;
+		text-fill-color: transparent;
+		-webkit-text-fill-color: transparent;
+	}
+
 	.ls-wrapper.ls-force-display-block {
 		display: block !important;
+	}
+
+	.ls-wrapper.ls-force-visibility-hidden {
+		visibility: hidden !important;
 	}
 
 	.ls-wrapper.ls-force-left-0 {
@@ -83,6 +167,17 @@
 	.ls-wrapper.ls-force-full-size {
 		width: 100% !important;
 		height: 100% !important;
+	}
+
+	.ls-layer.ls-force-no-transform,
+	.ls-wrapper.ls-force-no-transform {
+		transform: none !important;
+	}
+
+	.ls-force-no-transform .line,
+	.ls-force-no-transform .word,
+	.ls-force-no-transform .char {
+		transform: none !important;
 	}
 
 	.ls-background-videos {
@@ -111,13 +206,20 @@
 		z-index: 35;
 	}
 
+	.ls-z,
 	.ls-parallax,
 	.ls-in-out,
-	.ls-z {
+	.ls-scroll,
+	.ls-scroll-transform,
+	.ls-loop,
+	.ls-clip {
 		position: absolute !important;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
 	}
 
-	.ls-parallax,
 	.ls-z {
 		width: 100% !important;
 		height: 100% !important;
@@ -130,18 +232,26 @@
 		pointer-events: none !important;
 	}
 
-	.ls-in-out {
-		display: none;
+	.ls-inner-wrapper {
 		pointer-events: auto;
 	}
 
+	.ls-inner-wrapper * {
+		pointer-events: inherit;
+	}
+
+	.ls-in-out {
+		display: none;
+	}
+
 	.ls-loop, .ls-clip {
-		position: absolute !important;
 		display: block !important;
 	}
 
 	.ls-parallax,
 	.ls-in-out,
+	.ls-scroll,
+	.ls-scroll-transform,
 	.ls-loop,
 	.ls-z {
 		background: none !important;
@@ -830,7 +940,7 @@
 		position: absolute;
 	}
 
-	.ls-3d-box div {
+	.ls-3d-box > div {
 		overflow: hidden;
 		margin: 0;
 		padding: 0;
@@ -992,6 +1102,7 @@
 		border-style: solid;
 		border-color: #000;
 		color: #000;
+		/* The default font-size value must also be changed in the layerslider.js file! */
 		font-size: 36px;
 		font-family: Arial, sans-serif;
 		background-repeat: no-repeat;
