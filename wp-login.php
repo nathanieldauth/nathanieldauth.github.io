@@ -26,11 +26,13 @@
 <meta name="msapplication-TileImage" content="https://nathanieldauth.github.io/wp-content/uploads/cropped-Nathaniel-Dauth-Photography-Favi-270x270.png">
 	</head>
 	<body class="login no-js login-action-login wp-core-ui  locale-en-us">
-	<script type="text/javascript">document.body.className = document.body.className.replace('no-js','js');</script>
+	<script type="text/javascript">
+		document.body.className = document.body.className.replace('no-js','js');
+	</script>
 		<div id="login">
 		<h1><a href="https://wordpress.org/">Powered by WordPress</a></h1>
 	
-		<form name="loginform" id="loginform" action="https://localhost/nathanieldauth/wp-login.php" method="post">
+		<form name="loginform" id="loginform" action="https://nathanieldauth.github.io/wp-login.php" method="post">
 			<p>
 				<label for="user_login">Username or Email Address</label>
 				<input type="text" name="log" id="user_login" class="input" value="" size="20" autocapitalize="off" autocomplete="username">
@@ -48,7 +50,7 @@
 						<p class="forgetmenot"><input name="rememberme" type="checkbox" id="rememberme" value="forever"> <label for="rememberme">Remember Me</label></p>
 			<p class="submit">
 				<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Log In">
-									<input type="hidden" name="redirect_to" value="https://localhost/nathanieldauth/wp-admin/">
+									<input type="hidden" name="redirect_to" value="https://nathanieldauth.github.io/wp-admin/">
 									<input type="hidden" name="testcookie" value="1">
 			</p>
 		</form>
@@ -56,9 +58,10 @@
 					<p id="nav">
 								<a href="https://nathanieldauth.github.io/wp-login.php?action=lostpassword">Lost your password?</a>
 			</p>
-					<script type="text/javascript">function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
+					<script type="text/javascript">
+			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
 wp_attempt_focus();
-if ( typeof wpOnload === 'function' ) { wpOnload() }</script>
+if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
 				<p id="backtoblog">
 			<a href="https://nathanieldauth.github.io/">&larr; Go to Nathaniel Dauth</a>		</p>
 			</div>
@@ -92,7 +95,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/nathanieldauth\/wp-admin\/admin-ajax.php
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"bf55004213"};
+var userProfileL10n = {"user_id":"0","nonce":"8eb9660c78"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.0.3" id="user-profile-js"></script>
