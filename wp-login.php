@@ -92,7 +92,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/nathanieldauth\/wp-admin\/admin-ajax.php
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"fb9f146e2b"};
+var userProfileL10n = {"user_id":"0","nonce":"bf55004213"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.0.3" id="user-profile-js"></script>
