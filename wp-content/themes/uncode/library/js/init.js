@@ -681,7 +681,7 @@ function whichAnimationEvent() {
 				var second_array = Array.prototype.slice.call(mainmenucenter);
 				mainmenu = first_array.concat(second_array);
 			}
-			secmenu = document.querySelectorAll('.menu-secondary:not(.menu-primary)');
+			secmenu = document.querySelectorAll('.menu-secondary');
 			calculateMenuHeight(true);
 			for (var k = 0; k < menuItemsButton.length; k++) {
 				var a_item = menuItemsButton[k].parentNode,
@@ -777,6 +777,7 @@ function whichAnimationEvent() {
 				}
 				menuHeight += secmenuHeight;
 			} else {
+				secmenu = document.querySelectorAll('.menu-secondary:not(.menu-primary)');
 				menuHeight = UNCODE.menuMobileHeight;
 				if (isMobileTransparent) {
 					for (var i = 0; i < mainmenu.length; i++) {

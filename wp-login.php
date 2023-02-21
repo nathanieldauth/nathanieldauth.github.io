@@ -4,12 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Log In &lsaquo; Nathaniel Dauth &#8212; WordPress</title>
 	<meta name="robots" content="noindex, follow">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="stylesheet" id="dashicons-css" href="https://nathanieldauth.github.io/wp-includes/css/dashicons.min.css?ver=6.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="buttons-css" href="https://nathanieldauth.github.io/wp-includes/css/buttons.min.css?ver=6.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="forms-css" href="https://nathanieldauth.github.io/wp-admin/css/forms.min.css?ver=6.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="l10n-css" href="https://nathanieldauth.github.io/wp-admin/css/l10n.min.css?ver=6.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="login-css" href="https://nathanieldauth.github.io/wp-admin/css/login.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://nathanieldauth.github.io/wp-includes/css/dashicons.min.css?ver=6.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="buttons-css" href="https://nathanieldauth.github.io/wp-includes/css/buttons.min.css?ver=6.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="forms-css" href="https://nathanieldauth.github.io/wp-admin/css/forms.min.css?ver=6.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="l10n-css" href="https://nathanieldauth.github.io/wp-admin/css/l10n.min.css?ver=6.1.1" type="text/css" media="all">
+<link rel="stylesheet" id="login-css" href="https://nathanieldauth.github.io/wp-admin/css/login.min.css?ver=6.1.1" type="text/css" media="all">
 <link rel="apple-touch-icon" sizes="180x180" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://nathanieldauth.github.io/wp-content/uploads/fbrfg/favicon-16x16.png">
@@ -56,8 +55,7 @@
 		</form>
 
 					<p id="nav">
-								<a href="https://nathanieldauth.github.io/wp-login.php?action=lostpassword">Lost your password?</a>
-			</p>
+				<a href="https://nathanieldauth.github.io/wp-login.php?action=lostpassword">Lost your password?</a>			</p>
 					<script type="text/javascript">
 			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
 wp_attempt_focus();
@@ -65,7 +63,7 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
 				<p id="backtoblog">
 			<a href="https://nathanieldauth.github.io/">&larr; Go to Nathaniel Dauth</a>		</p>
 			</div>
-			<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+			<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/jquery/jquery.min.js?ver=3.6.1" id="jquery-core-js"></script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="zxcvbn-async-js-extra">
 /* <![CDATA[ */
@@ -75,8 +73,8 @@ var _zxcvbnSettings = {"src":"https:\/\/nathanieldauth.github.io\/wp-includes\/j
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/zxcvbn-async.min.js?ver=1.0" id="zxcvbn-async-js"></script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
 <script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/hooks.min.js?ver=c6d64f2cb8f5c6bb49caca37f8828ce3" id="wp-hooks-js"></script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/i18n.min.js?ver=ebee46757c6a411e38fd079a7ac71d94" id="wp-i18n-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
 <script type="text/javascript" id="wp-i18n-js-after">
 wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 </script>
@@ -85,20 +83,20 @@ wp.i18n.setLocaleData( { 'text directionltr': [ 'ltr' ] } );
 var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/password-strength-meter.min.js?ver=6.0.3" id="password-strength-meter-js"></script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/underscore.min.js?ver=1.13.3" id="underscore-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/password-strength-meter.min.js?ver=6.1.1" id="password-strength-meter-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/underscore.min.js?ver=1.13.4" id="underscore-js"></script>
 <script type="text/javascript" id="wp-util-js-extra">
 /* <![CDATA[ */
 var _wpUtilSettings = {"ajax":{"url":"\/nathanieldauth\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-includes/js/wp-util.min.js?ver=6.1.1" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"8eb9660c78"};
+var userProfileL10n = {"user_id":"0","nonce":"e5bf9cc40e"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.0.3" id="user-profile-js"></script>
+<script type="text/javascript" src="https://nathanieldauth.github.io/wp-admin/js/user-profile.min.js?ver=6.1.1" id="user-profile-js"></script>
 	<div class="clear"></div>
 	</body>
 	</html>

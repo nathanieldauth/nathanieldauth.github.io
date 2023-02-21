@@ -6086,13 +6086,15 @@ UNCODE.checkScrollForTabs = function(){
 	var scrollBody = function(index) {
 
 		var getSection = $('a[href="' + index + '"][data-tab-history]'),
-			scrollTo;
+			scrollTo,
+			safeGap = 27;
 
 		if ( ! getSection.length ) {
 			getSection = $('div[data-parent="' + index + '"]');
 
 			if ( getSection.attr('data-target') == 'row' ) {
 				getSection = getSection.closest('.vc_row');
+				safeGap = 0;
 			}
 		}
 
@@ -6106,7 +6108,7 @@ UNCODE.checkScrollForTabs = function(){
 		getOffset = UNCODE.get_scroll_offset();
 		if ( typeof getSection.offset() === 'undefined' )
 			return;
-		scrollTo = getSection.offset().top - 27;
+		scrollTo = getSection.offset().top - safeGap;
 		scrollTo -= getOffset;
 
 		var scrollSpeed = (SiteParameters.constant_scroll == 'on') ? Math.abs(delta) / parseFloat(SiteParameters.scroll_speed) : SiteParameters.scroll_speed;
@@ -7901,7 +7903,7 @@ UNCODE.magicCursor = function(){
 			var $this = $(this),
 				data_cursor = $this.closest('[data-cursor]').attr('data-cursor') || $this.attr('data-cursor'),
 				is_frontend_editor = $this.closest('.vc_controls').length,
-				hasSrcOrClck = $('[src]', $this).length || $this.closest('.tmb-click-row').length,
+				hasSrcOrClck = $('[src]', $this).length || $('.t-background-cover', $this).length || $this.closest('.tmb-click-row').length,
 				$parent_cursor = $this.closest('[class*="custom-cursor"]');
 			if ( is_frontend_editor ) {
 				cursorType = 'auto';
@@ -9844,15 +9846,20 @@ UNCODE.ajax_filters = function() {
  ************************/
  	var widget_hover_hack = function() {
  		$('.widget, .uncode_widget').each(function(){
- 			var $widget = $(this),
- 				$lis = $('ul > li', $widget).has('a');
+			var $widget = $(this),
+				$lis = $('ul > li', $widget).has('a'),
+				$footer = $widget.closest('#colophon');
 
 			$lis.each(function(){
- 				var $li = $(this).addClass('no-evts'),
+ 				var $li = $(this),
  					$a = $('a', $li),
  					$label = $a.closest('label');
 
- 				if ( ! $('span', $a).length ) {
+				if ( !$footer.length ) {
+					$li.addClass('no-evts');
+				}
+		
+				if ( ! $('span', $a).length ) {
  					$li.addClass( 'li-hover' );
  				}
 
@@ -9982,13 +9989,15 @@ UNCODE.ajax_filters = function() {
 		});
 
 		$(document).on('click', '.uncode-woocommerce-sorting-dropdown__link', function(e) {
-			e.preventDefault();
 
 			var _this = $(this);
 			var container = get_filters_container();
 			var url = _this.attr('href');
 
-			reload_items(container, url, true);
+			if ( container.length ) {
+				e.preventDefault();
+				reload_items(container, url, true);
+			}
 		});
 
 		$(document).on('click', '.uncode_woocommerce_widget--price-filter .button', function(e) {

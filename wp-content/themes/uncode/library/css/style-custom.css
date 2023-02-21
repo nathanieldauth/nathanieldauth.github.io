@@ -2800,6 +2800,7 @@ body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_st
 .top-menu.top-menu-enhanced.top-menu-border.menu-light::after,
 body.menu-mobile-borders .submenu-light .menu-container .main-menu-container .menu-horizontal,
 body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav-last > *:first-child::after,
+body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav + .navbar-cta:not(.hmenu-center-split-child) > *:first-child::after,
 body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav-first > *:first-child::after,
 .top-menu.top-menu-enhanced.submenu-light:not(.top-menu-border) .row-menu-inner .menu-horizontal ul.menu-smart > li > ul {
   border-color: rgba(234,234,234,1) !important;
@@ -2807,6 +2808,7 @@ body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav-
 .top-menu.top-menu-enhanced.top-menu-border.menu-dark .row-menu-inner::after,
 body.menu-mobile-borders .submenu-dark .menu-container .main-menu-container .menu-horizontal,
 body:not(.menu-force-opacity) .menu-dark .menu-borders.needs-after .navbar-nav-last > *:first-child::after,
+body:not(.menu-force-opacity) .menu-dark .menu-borders.needs-after .navbar-nav + .navbar-cta:not(.hmenu-center-split-child) > *:first-child::after,
 body:not(.menu-force-opacity) .menu-dark .menu-borders.needs-after .navbar-nav-first > *:first-child::after,
 .top-menu.top-menu-enhanced.submenu-dark:not(.top-menu-border) .row-menu-inner .menu-horizontal ul.menu-smart > li > ul {
   border-color: rgba(48,49,51,1) !important;
