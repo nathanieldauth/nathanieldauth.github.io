@@ -2762,7 +2762,7 @@ body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_st
 .menu-light.vmenu-borders,
 .menu-light .main-menu-container,
 .menu-light .menu-container .overlay .overlay-search-wrapper {
-  border-color: rgba(234,234,234,1);
+  border-color: rgba(0,0,0,0);
 }
 .menu-dark .menu-smart,
 .menu-dark .menu-smart li,
@@ -2780,7 +2780,7 @@ body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_st
 @media (min-width: 960px) {
   .menu-horizontal.menu-sub-enhanced.submenu-light .menu-smart > .mega-menu .mega-menu-inner,
   .submenu-light .menu-smart li ul li {
-    border-color: rgba(234,234,234,1);
+    border-color: rgba(0,0,0,0);
   }
   .menu-horizontal.menu-sub-enhanced.submenu-dark .menu-smart > .mega-menu .mega-menu-inner,
   .submenu-dark .menu-smart li ul li {
@@ -2790,11 +2790,11 @@ body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_st
 @media (max-width: 959px) {
   .menu-light .row-brand,
   .menu-light .row-menu .row-menu-inner {
-    border-bottom-color: rgba(234,234,234,1);
+    border-bottom-color: rgba(0,0,0,0);
   }
   .submenu-light .menu-smart,
   .submenu-light .menu-smart li {
-    border-color: rgba(234,234,234,1);
+    border-color: rgba(0,0,0,0);
   }
   .menu-dark .row-brand,
   .menu-dark .row-menu .row-menu-inner {
@@ -2815,7 +2815,7 @@ body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-light .m
 body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-light .menu-smart > li,
 body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-light .navbar-nav-last > *:first-child::after,
 body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-light .navbar-nav-first > *:first-child::after {
-  border-color: rgba(234,234,234,1);
+  border-color: rgba(0,0,0,0);
 }
 body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-dark .menu-borders:not(.needs-after),
 body:not(.menu-force-opacity):not(.navbar-hover) .menu-transparent.menu-dark .menu-borders.needs-after::after,
@@ -2831,7 +2831,7 @@ body:not(.menu-force-opacity):not(.navbar-hover) .style-light-override:not(.is_s
 body:not(.menu-force-opacity):not(.navbar-hover) .style-light-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-smart > li,
 body:not(.menu-force-opacity):not(.navbar-hover) .style-light-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .navbar-nav-last > *:first-child::after,
 body:not(.menu-force-opacity):not(.navbar-hover) .style-light-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .navbar-nav-first > *:first-child::after {
-  border-color: rgba(234,234,234,1) !important;
+  border-color: rgba(0,0,0,0) !important;
 }
 body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-borders:not(.needs-after),
 body:not(.menu-force-opacity):not(.navbar-hover) .style-dark-override:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent .menu-borders.needs-after::after,
@@ -2847,7 +2847,7 @@ body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav-
 body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav + .navbar-cta:not(.hmenu-center-split-child) > *:first-child::after,
 body:not(.menu-force-opacity) .menu-light .menu-borders.needs-after .navbar-nav-first > *:first-child::after,
 .top-menu.top-menu-enhanced.submenu-light:not(.top-menu-border) .row-menu-inner .menu-horizontal ul.menu-smart > li > ul {
-  border-color: rgba(234,234,234,1) !important;
+  border-color: rgba(0,0,0,0) !important;
 }
 .top-menu.top-menu-enhanced.top-menu-border.menu-dark .row-menu-inner::after,
 body.menu-mobile-borders .submenu-dark .menu-container .main-menu-container .menu-horizontal,
@@ -2868,7 +2868,7 @@ body:not(.menu-force-opacity):not(.navbar-hover).menu-overlay .menu-transparent:
 @media (min-width: 960px) {
   .submenu-transparent.submenu-light .menu-smart ul,
   .submenu-transparent.submenu-light .menu-smart li ul li {
-    border-color: rgba(234,234,234,1);
+    border-color: rgba(0,0,0,0);
   }
   .submenu-transparent.submenu-dark .menu-smart ul,
   .submenu-transparent.submenu-dark .menu-smart li ul li {
@@ -2932,7 +2932,7 @@ body:not(.menu-force-opacity):not(.navbar-hover).menu-overlay .menu-transparent:
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent.style-light-original > *:not(.overlay-search),
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent.style-dark-original.style-light-override > *:not(.overlay-search) {
     background: transparent;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0);
   }
   body:not(.menu-overlay):not(.hmenu-center):not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent.style-dark-original,
   body:not(.menu-overlay):not(.hmenu-center):not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-desktop-transparent)):not(.is_mobile_open).menu-transparent.style-light-original.style-dark-override {
@@ -2948,7 +2948,7 @@ body:not(.menu-force-opacity):not(.navbar-hover).menu-overlay .menu-transparent:
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-mobile-transparent)):not(.is_mobile_open).menu-transparent.style-light-original > *:not(.overlay-search),
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-mobile-transparent)):not(.is_mobile_open).menu-transparent.style-dark-original.style-light-override > *:not(.overlay-search) {
     background: transparent;
-    background-color: rgba(255,255,255,1);
+    background-color: rgba(255,255,255,0);
   }
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-mobile-transparent)):not(.is_mobile_open).menu-transparent.style-dark-original > *:not(.overlay-search),
   body:not(.menu-force-opacity):not(.navbar-hover) .menu-wrapper:not(.no-header) .menu-transparent:not(.is_stuck:not(.menu-mobile-transparent)):not(.is_mobile_open).menu-transparent.style-light-original.style-dark-override > *:not(.overlay-search) {
@@ -2966,7 +2966,7 @@ body:not(.menu-force-opacity):not(.navbar-hover).menu-overlay .menu-transparent:
 /* Menu scroll arrows */
 .submenu-light .menu-smart span.scroll-up,
 .submenu-light .menu-smart span.scroll-down {
-  border-color: rgba(234,234,234,1);
+  border-color: rgba(0,0,0,0);
   background-color: #ffffff;
 }
 .submenu-dark .menu-smart span.scroll-up,
@@ -2976,14 +2976,14 @@ body:not(.menu-force-opacity):not(.navbar-hover).menu-overlay .menu-transparent:
 }
 .submenu-light .menu-smart span.scroll-up-arrow,
 .submenu-light .menu-smart span.scroll-down-arrow {
-  border-color: transparent transparent rgba(234,234,234,1) transparent !important;
+  border-color: transparent transparent rgba(0,0,0,0) transparent !important;
 }
 .submenu-dark .menu-smart span.scroll-up-arrow,
 .submenu-dark .menu-smart span.scroll-down-arrow {
   border-color: transparent transparent rgba(48,49,51,1) transparent !important;
 }
 .submenu-light .menu-smart span.scroll-down-arrow {
-  border-color: rgba(234,234,234,1) transparent transparent transparent !important;
+  border-color: rgba(0,0,0,0) transparent transparent transparent !important;
 }
 .submenu-dark .menu-smart span.scroll-down-arrow {
   border-color: rgba(48,49,51,1) transparent transparent transparent !important;
@@ -3239,7 +3239,7 @@ body:not(.menu-force-opacity) .menu-primary:not(.is_stuck:not(.menu-desktop-tran
 }
 /* SubMenu Cart */
 .submenu-light .menu-accordion .menu-smart .uncode-cart li {
-  border-color: rgba(234,234,234,1);
+  border-color: rgba(0,0,0,0);
 }
 .submenu-dark .menu-accordion .menu-smart .uncode-cart li {
   border-color: rgba(48,49,51,1);
@@ -3247,7 +3247,7 @@ body:not(.menu-force-opacity) .menu-primary:not(.is_stuck:not(.menu-desktop-tran
 /* #Menu-vertical */
 /* Menu builder */
 .row-inner.col-w-borders > div:not(:first-child) > .uncol.style-light:before {
-  background-color: rgba(234,234,234,1);
+  background-color: rgba(0,0,0,0);
 }
 .row-inner.col-w-borders > div:not(:first-child) > .uncol.style-dark:before {
   background-color: rgba(48,49,51,1);
