@@ -549,6 +549,7 @@ function whichAnimationEvent() {
 		$mainWrapper,
 		$initBox,
 		menusticky,
+		menuStickyMobile,
 		menuHeight = 0,
 		menuMobileHeight = 0,
 		mainmenu = new Array(),
@@ -564,11 +565,13 @@ function whichAnimationEvent() {
 		lastScrollValue = 0,
 		wwidth = uaInfo.getIpadApp() == 'ipad_app' ? document.documentElement.clientWidth : window.innerWidth || document.documentElement.clientWidth,
 		wheight = uaInfo.getIpadApp() == 'ipad_app' ? document.documentElement.clientHeight : window.innerHeight || document.documentElement.clientHeight,
+		mediaQuery = 959,
+		mediaQueryMobile = 569,
 		printDialogOpen = false,
 		isScrolling = false,
 		boxWrapper,
 		docheight = 0,
-		isMobile = classie.hasClass(document.documentElement, 'touch') ? true : false,
+		isMobile = wwidth <= mediaQuery,
 		isIE = classie.hasClass(document.documentElement, 'ie') || classie.hasClass(document.documentElement, 'opera12') ? true : false,
 		isFF = classie.hasClass(document.documentElement, 'firefox') ? true : false,
 		isFullPage,
@@ -577,8 +580,6 @@ function whichAnimationEvent() {
 		transitionEvent = whichTransitionEvent(),
 		animationEvent = whichAnimationEvent(),
 		footerScroller = false,
-		mediaQuery = 959,
-		mediaQueryMobile = 569,
 		menuOpened = false,
 		overlayOpened = false,
 		menuMobileTriggerEvent = new CustomEvent('menuMobileTrigged'),
@@ -2098,8 +2099,15 @@ function whichAnimationEvent() {
 				}
 			});
 			if (masthead != undefined) {
+				menuStickyMobile = UNCODE.isMobile ? document.querySelectorAll('.menu-sticky-mobile') : null;
 				masthead.parentNode.style.height = menuHeight + 'px';
-				if (header != undefined && header.length) {
+				if (menuStickyMobile != undefined && menuStickyMobile != null && menuStickyMobile.length) {
+					var $overlay = masthead.parentNode.parentNode.querySelector('div.overlay-menu');
+					if ( typeof $overlay == 'object' && $overlay != null ) {
+						$overlay.style.top = menuHeight + 'px';
+					}		
+				}
+				 if (header != undefined && header.length) {
 					if (classie.hasClass(masthead, 'menu-transparent')) {
 						if ( ( isMobileTransparent && menuMobileTransparent !== null ) || wwidth > mediaQuery) {
 							masthead.parentNode.style.height = '0px';
@@ -2914,6 +2922,7 @@ function whichAnimationEvent() {
 		setScrollPosition,
 		scrollFunction = function() {
 			if ( ! UNCODE.isFullPage ) {
+				menusticky = UNCODE.isMobile ? document.querySelectorAll('.menu-sticky-mobile') : document.querySelectorAll('.menu-sticky, .menu-sticky-vertical');
 				if (menusticky != undefined && menusticky.length) stickMenu(bodyTop);
 				kenburnsHeader(bodyTop);
 				kenburnsRowCol(bodyTop);
@@ -3166,6 +3175,7 @@ function whichAnimationEvent() {
 				if (SiteParameters.dynamic_srcset_active === '1') {
 					UNCODE.refresh_dynamic_srcset_size(false);
 				}
+				UNCODE.isMobile = UNCODE.wwidth <= UNCODE.mediaQuery;
 				menuOpacity();
 			}, 100
 		);

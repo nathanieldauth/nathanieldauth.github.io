@@ -11,11 +11,11 @@
 	<atom:link href="https://nathanieldauth.github.io/comments/feed/" rel="self" type="application/rss+xml" />
 	<link>https://nathanieldauth.github.io/</link>
 	<description></description>
-	<lastBuildDate>Wed, 08 Mar 2023 10:07:21 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 07 Apr 2023 04:04:04 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<generator>https://wordpress.org/?v=6.2</generator>
 </channel>
 </rss>

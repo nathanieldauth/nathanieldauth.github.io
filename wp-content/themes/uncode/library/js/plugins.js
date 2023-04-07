@@ -33396,10 +33396,17 @@ if ( typeof module != 'undefined' && module.exports ) {
                 return true;
             }
 
+            //Uncode addition
+            var uncode_body_borders = parseFloat($('.body-borders').attr('data-border')) || 0;
+            //End Uncode addition
+
             if (type === 'top') {
                 return scroller.y >= 0 && !scrollable.scrollTop();
             } else if (type === 'bottom') {
-                return (0 - scroller.y) + scrollable.scrollTop() + 1 + scrollable.innerHeight() >= scrollable[0].scrollHeight;
+                //Uncode change
+                // return (0 - scroller.y) + scrollable.scrollTop() + 1 + scrollable.innerHeight() >= scrollable[0].scrollHeight;
+                return (0 - scroller.y) + scrollable.scrollTop() + 1 + ( uncode_body_borders * 2 ) + scrollable.innerHeight() >= scrollable[0].scrollHeight;
+                //End Uncode change
             }
         },
 
